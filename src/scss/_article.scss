@@ -1,0 +1,391 @@
+.red {
+    color: red;
+}
+
+.green {
+    color: green
+}
+
+.paragraph-introduction {
+    color: $brown;
+    font-size: 20px;
+    font-weight: 600;
+    font-size: 2em;
+    padding-bottom: 40px;
+}
+
+.autor-i {
+    width: 200px;
+}
+
+.h-red {
+    color: $hRed;
+    font-weight: 700;
+    margin: 20px 0px;
+}
+
+.h-green-marked,
+.h-yellow-marked {
+    display: inline-block;
+}
+
+.h-yellow-marked {
+    color: $hRed;
+    background-color: rgb(255, 210, 9);
+}
+
+.h-green-marked {
+    color: yellow;
+    background-color: green;
+}
+
+.header {
+    width: 100%;
+    figure {
+        img {
+            margin: 10px;
+            width: calc(100% - 20px);
+            border: 1px solid red;
+        }
+    }
+}
+
+.doctor-img {
+    width: 45%;
+    border: none;
+}
+
+.banner-container {
+    margin-top: 20px;
+    img {
+        width: 100%;
+    }
+}
+
+.figure-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgb(200, 200, 200);
+    img {
+        width: 100%;
+    }
+    figcaption {
+        width: 100%;
+        background: #fbf5b7;
+        text-align: center;
+        padding: 10px 0px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+.list-number {
+    p {
+        margin-top: 10px;
+    }
+}
+
+.waring {
+    margin-bottom: 30px;
+    h3 {
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+    position: relative;
+    margin-left: 50px;
+    :nth-child(2) {
+        color: red;
+    }
+    span {
+        position: absolute;
+        top: 30%;
+        left: -35px;
+        font-size: 4em;
+        color: red;
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+}
+
+.frame-container {
+    border: 20px solid #000;
+    border-image-source: url(https://i.ibb.co/NSjr7z1/b.png);
+    border-image-slice: 20 22;
+    border-image-repeat: round;
+    background: #fafcf0;
+    padding: 40px 10px;
+    h3 {
+        text-align: center;
+        color: $green;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    ul {
+        li {
+            list-style: none;
+            p {
+                .fas {
+                    color: $green;
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+}
+
+.sign {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.product-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    .product-item {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        img {
+            width: 90%;
+        }
+        figcaption {
+            margin: 0;
+            text-align: center;
+            p {
+                font-weight: 600;
+            }
+            span {
+                font-size: 120px;
+            }
+        }
+    }
+    .price-old {
+        text-decoration: line-through;
+        font-size: 2.1em;
+    }
+    .price-new {
+        font-weight: 700;
+        font-size: 3.2em;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+.order-form {
+    background: #f5f5f5;
+    width: 100%;
+    border: 1px solid rgb(199, 198, 198);
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    h3:after {
+        content: ' ';
+        display: block;
+        border: 1px solid #d0d0d0;
+        border-radius: 0px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+    label,
+    select {
+        width: 100%;
+    }
+    .fild {
+        width: 100%;
+        position: relative;
+        input {
+            width: 100% !important;
+        }
+        .hint {
+            position: absolute;
+            top: 10%;
+            right: 10px;
+            border-radius: 50%;
+            background: rgb(173, 173, 173);
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            &:hover+.error-type {
+                display: block;
+            }
+        }
+        .hint:hover+.error-type {
+            display: block;
+        }
+        .error-type {
+            position: absolute;
+            display: none;
+            top: -10px;
+            right: 50px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid red;
+        }
+    }
+    label {
+        font-weight: 700;
+    }
+    input,
+    select {
+        border-radius: 3px;
+        border: 1px solid rgb(204, 204, 204);
+        padding: 10px;
+    }
+    input[type=button] {
+        background: green;
+        border: 0;
+        color: $white;
+        width: 100%;
+        font-size: 20px;
+        padding: 20px 0;
+        &:hover {
+            background: rgb(19, 173, 58);
+            color: black;
+            -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+    }
+    .post_city {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        input {
+            &:nth-child(1) {
+                width: 20%;
+                margin-right: 20px;
+            }
+            &:nth-child(2) {
+                width: 80%;
+            }
+        }
+    }
+    table,
+    tr,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    table {
+        margin-top: 30px;
+    }
+    .order-form_top {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+.footer {
+    ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: 20px;
+        li {
+            list-style: none;
+            text-decoration: none;
+            &:nth-child(2) {
+                &::after,
+                &::before {
+                    content: "|"
+                }
+            }
+            a {
+                margin: 0px 5px;
+            }
+        }
+    }
+}
+
+.disable {
+    display: none;
+}
+
+.active {
+    display: block;
+    color: green;
+}
+
+.benefits-list {
+    list-style: none;
+    li {
+        list-style: none;
+    }
+    .benefits-list_arrow {
+        color: green;
+        -webkit-transform: rotate(40deg);
+        transform: rotate(40deg);
+        margin-right: 10px;
+    }
+}
+
+.error {
+    border-color: #E01546;
+}
+
+.summaryParagraph {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: green;
+    padding: 20px;
+    border: 1px solid rgb(11, 71, 11);
+    background: rgba(77, 170, 73, 0.486);
+}

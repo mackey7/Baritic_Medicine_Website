@@ -1,0 +1,52 @@
+@import 'color';
+@import 'opinion';
+@import 'article';
+.body {
+    background: $bgSite;
+    width: 100%;
+}
+
+.main {
+    background: $bgMain;
+    width: 90%;
+    -webkit-box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 992px) {
+    .main {
+        width: 100%;
+    }
+    .product-item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        img {
+            -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+            order: 2;
+        }
+        figcaption {
+            -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+            order: 1;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .order-form {
+        div {
+            width: 100%;
+            input {
+                &:nth-child(1) {
+                    width: 100%;
+                }
+                &:nth-child(2) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
